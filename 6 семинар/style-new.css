@@ -14,7 +14,7 @@ body {
     gap: 5vh;
     padding: 5vh 5vh;
     margin-bottom: 5vh;
-    
+
 }
 
 .Top {
@@ -24,8 +24,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5%;
-    
-   }
+
+}
 
 .Top a {
     color: var(--ffffff, #FFF);
@@ -41,7 +41,7 @@ body {
     justify-content: center;
     align-content: center;
     gap: 5%;
-           
+
 }
 
 .Info {
@@ -50,7 +50,7 @@ body {
     align-content: flex-start;
     gap: 5%;
     width: 70%;
-    
+
 }
 
 .Info_H1 {
@@ -62,7 +62,7 @@ body {
     line-height: 160%;
     text-transform: uppercase;
     align-items: flex-end;
-        
+
 }
 
 
@@ -83,7 +83,7 @@ body {
     font-weight: 600;
     line-height: 160%;
     align-items: flex-end;
-    
+
 }
 
 .Info_Buttons {
@@ -103,20 +103,20 @@ body {
     gap: 10px;
     border-radius: 5px;
     background: var(--3-a-68-b-8, #3A68B8);
-    
+
 }
 
 .Info_Play {
     width: 15px;
     height: 15px;
-    
+
 }
 
 .Picture {
     display: flex;
     /* justify-content: center;
     align-items: center; */
-            
+
 }
 
 .Bottom {
@@ -124,12 +124,12 @@ body {
     text-align: center;
     justify-content: center;
     gap: 5%;
-        
+
 }
 
 img {
     background: transparent;
-    
+
 }
 
 .small_card {
@@ -180,7 +180,7 @@ p {
 
 }
 
-@media(max-width: 800px){
+@media(max-width: 800px) {
     .Main {
         display: flex;
         flex-direction: column;
@@ -188,18 +188,20 @@ p {
         align-content: center;
         flex-wrap: wrap;
         gap: 5%;
-           
+
     }
+
     .Info {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-content: center;
-         flex-wrap: wrap;
-         width: 100%;
-         gap: 5%;
-         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 5%;
+        text-align: center;
     }
+
     body {
         background-color: #020a18;
         display: flex;
@@ -209,25 +211,29 @@ p {
         /* gap: 5vh;
         padding: 5vh 5vh;
         margin-bottom: 5vh; */
-    
-        }
-    h2{
+
+    }
+
+    h2 {
         text-align: center;
     }
-    p{
-        text-align: center;
-    } 
 
-    .Picture{
+    p {
+        text-align: center;
+    }
+
+    .Picture {
         display: flex;
         justify-content: center;
     }
-    .Info_Buttons{
+
+    .Info_Buttons {
         justify-content: center;
         align-self: center;
         width: 100%;
     }
-    .Info_Button{
+
+    .Info_Button {
         align-self: center;
         width: 25%;
     }
@@ -235,11 +241,11 @@ p {
     .Info_H1 {
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .Info_H2 {
-        justify-content: center;    
+        justify-content: center;
         align-items: center;
 
     }
@@ -247,22 +253,57 @@ p {
     .Info_Paragraph {
         align-items: center;
         justify-content: center;
-        
+
     }
 
-    .Bottom{
+    .Bottom {
         display: grid;
-        gap: 0%;
+        gap: 5%;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
-        /* justify-content: center;     
-        align-items: center; */
-    }
-    .Table{
-        display: flex;
-        flex-direction: row;
-        gap: 0%;
-        justify-content: center;     
+        align-content: center;
+        justify-content: center;
         align-items: center;
+    }
+
+    .table {
+        display: grid;
+        gap: 5%;
+        width: 100%;
+        grid-template-columns: 50%;
+        grid-template-rows: repeat(6, 1fr);
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .bottom_icons_left {
+        justify-self: end;
+    }
+
+    .bottom_icons_right {
+        justify-self: start;
+    }
+
+    .small_card {
+        background: #132035;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .large_card {
+        background: #132035;
+        color: #FFF;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        grid-area: span 1/ span 1;
     }
 }
